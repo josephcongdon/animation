@@ -1,1 +1,3 @@
-console.log("testing")
+$("#click").click(()=> {
+   alert("working");
+});
