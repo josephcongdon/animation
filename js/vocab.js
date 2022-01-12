@@ -1,14 +1,14 @@
 const vocabulary = [
-    { term:'HTML', definition:'', language:'' },
-    { term:'Block-Level Element', definition:'', language:'' },
-    { term:'Inline Element', definition:'', language:'' },
-    { term:'Void Element', definition:'', language:'' },
-    { term:'Attributes', definition:'', language:'' },
-    { term:'Nesting Element', definition:'', language:'' },
-    { term:'List', definition:'', language:'' },
-    { term:'Anchor', definition:'', language:'' },
-    { term:'Image', definition:'', language:'' },
-    { term:'Forms', definition:'', language:'' },
+    { term:'HTML', definition:'Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.', language:'html' },
+    { term:'Block-Level Element', definition:'occupies the entire horizontal space of its parent element (container), and vertical space equal to the height of its contents,', language:'html' },
+    { term:'Inline Element', definition:' those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content', language:'html' },
+    { term:'Void Element', definition:'An element whose content model never allows it to have contents under any circumstances', language:'html' },
+    { term:'Attributes', definition:'A modifier of an HTML element type', language:'html' },
+    { term:'Nesting Element', definition:'The children of their parent container', language:'html' },
+    { term:'List', definition:'', language:'html' },
+    { term:'Anchor', definition:'', language:'html' },
+    { term:'Image', definition:'', language:'html' },
+    { term:'Forms', definition:'', language:'html' },
     { term:'Method', definition:'', language:'' },
     { term:'Action', definition:'', language:'' },
     { term:'Query String', definition:'', language:'' },
@@ -140,9 +140,31 @@ const vocabulary = [
 function showVocabulary(){
         let html = "";
     vocabulary.forEach((word) => {
-        html += '<h3>'+ word.term + '</h3>'
+        html += '<h3>'+ word.term + '</h3>' +
+            '<p>'+ word.definition + '</p>' +
+            '<em>'+ word.language + '</em>'
+
     })
     $('#term').append(html);
 }
 
-showVocabulary(vocabulary)
+showVocabulary(vocabulary);
+
+
+// const url = "https://codeupvocabulary-default-rtdb.firebaseio.com/vocabulary.json";
+//     async function postVocab() {
+//         for (let i = 0; i < vocabulary.length; i++) {
+//             await fetch(url, {
+//                 method: "post",
+//                 body: JSON.stringify(vocabulary[i])
+//             });
+//             console.log(vocabulary[i]);
+//         }
+//     }
+
+    // postVocab().then(()=> console.log("all data has been posted"))
+
+// const deleteUrl = https://codeupvocabulary-default-rtdb.firebaseio.com/vocabulary/-MtEbvqMNPrWB-orTTQU.json
+
+
+
