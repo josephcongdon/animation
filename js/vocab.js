@@ -159,6 +159,8 @@ showVocabulary(vocabulary);
 // const url = "https://codeupvocabulary-default-rtdb.firebaseio.com/vocabulary.json";
 //     async function postVocab() {
 //         for (let i = 0; i < vocabulary.length; i++) {
+//          let id = [];
+//          id.push
 //             await fetch(url, {
 //                 method: "post",
 //                 body: JSON.stringify(vocabulary[i])
