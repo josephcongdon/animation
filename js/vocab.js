@@ -113,6 +113,8 @@ const vocabulary = [
     { term:'JDBC (Java Database Connectivity)', definition:'An application programming interface for the programming language Java, which defines how a client may access a database', language:'java' },
     { term:'Hashing', definition:' Applying an irreversible mathematical function to an input string to produce an output string', language:'java' },
     { term:'Encryption', definition:' applying a reversible function to an input to produce an output that can later be decoded', language:'java' },
+    { term:'Enum', definition:' An action used when you have something with a predefined set of values that do not change. Looks similar to class but remains constant like the days of the week' , language:'java' },
+
 
     { term:'MySQL', definition:'', language:'mysql' },
     { term:'Query', definition:'', language:'mysql' },
@@ -163,7 +165,6 @@ vocabulary.forEach((item, i) => {
 // const url = "https://codeupvocabulary-default-rtdb.firebaseio.com/vocabulary.json";
 //     async function postVocab() {
 //         for (let i = 0; i < vocabulary.length; i++) {
-//          let id = [];
 //          id.unshift
 //             await fetch(url, {
 //                 method: "post",
